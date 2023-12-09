@@ -1,0 +1,10 @@
+
+7
+java:S1220""Move this file to a named package.8ÿƒºôÀ1
+T
+java:S2589"7Remove this expression which always evaluates to "true"(¯ú¹8ƒ„ºôÀ1
+Y
+java:S2589"7Remove this expression which always evaluates to "true"(çìøÁüÿÿÿÿ8ƒ„ºôÀ1
+L	java:S106"+Replace this use of System.out by a logger.(³±¾ßøÿÿÿÿ8‡„ºôÀ1
+G	java:S106"+Replace this use of System.out by a logger.(ıÃ×8ˆ„ºôÀ1
+E	java:S108")Either remove or fill this block of code.(¯ú¹8ˆ„ºôÀ1
