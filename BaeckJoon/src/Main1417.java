@@ -8,11 +8,14 @@ public class Main1417 {
         for(int i = 0; i < num; i++){
             num_list[i] = sc.nextInt();
         }
-        int count = 0;
-        int max = 0;
+        int count = 0; //얼마나 매수 했는지
+        int max = 0; //배열의 최대값
         while (true){
+            //크기가 하나면 끝
             if(num_list.length == 1) break;
+            // 다솜이가 max일때
             if(num_list[0] == max) {
+                //하지만 다솜이와 같은 값을 가지는 친구가 있다면 count++해주고 끝
                 for(int i = 1 ; i< num_list.length; i++){
                     if(num_list[0] == num_list[i]){
                         count++;
@@ -21,11 +24,13 @@ public class Main1417 {
                 }
                 break;
             }
+            //최대값 구하기
             for (int i = 0; i < num_list.length; i++) {
                 if (num_list[i] > max) {
                     max = num_list[i];
                 }
             }
+            // 뺐어가져가버리기
             if(num_list[0] != max){
                 for(int j = 0; j < num_list.length;j++){
                     if(num_list[j] == max){
