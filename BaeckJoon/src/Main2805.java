@@ -26,15 +26,17 @@ public class Main2805 {
                     total_2 += arr[i] - mid;
                 }
             }
-            // if(target == mid) 가 나오지 않는 이유는 
+            // if(target == mid) 가 나오지 않는 이유는 최소값을 구해야 하기 때문
 
 
             if(total_2 < target){
                 total = mid;
+                //여기서 정확학 값이 나와도 위의 조건 때문에 else로 가서 +1을 해준다
             }else{
                 start = mid+1;
             }
         }
+        //그 후 -1 을 해줘서 답을 찾아 낸다
         System.out.println(start-1);
     }
 }
