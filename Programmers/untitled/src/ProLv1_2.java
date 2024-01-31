@@ -1,7 +1,9 @@
+import java.util.Arrays;
+
 public class ProLv1_2 {
     public static void main(String[] args) {
-        int brown = 24;
-        int yellow = 24;
+        int brown = 8;
+        int yellow = 1;
 
         int width = 0;
         int height = 0;
@@ -12,8 +14,12 @@ public class ProLv1_2 {
                 height = (brown + yellow) / i;
             }
 
-            if(width > height){
-
+            if(width >= height){
+                if((width - 2) * (height - 2) == yellow){
+                    int[] arr = {width, height};
+                    System.out.println(Arrays.toString(arr));
+                    return;
+                }
             }
         }
 
